@@ -1,0 +1,56 @@
+body{
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: var(--purple-100);
+  position: relative;
+}
+#mobileBackgroundArt{
+  width: 100%;
+  height: auto;
+}
+main{
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  position: absolute;
+  top: min(20%, 20vh);
+  left: 5%;
+
+  width: 90%;
+}
+header{
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+
+  margin-bottom: 1.25rem;
+}
+#faqStarIcon{
+  width: 100%;
+  height: auto;
+}
+
+.allFAQContainer{
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
+}
+.questionContainer{
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+
+  gap: 2rem;
+}
+.questionText{
+  font-weight: 600;
+}
+.faqInteractionIcon{
+  width: 30px;
+  height: 30px;
+}
