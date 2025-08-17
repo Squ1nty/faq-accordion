@@ -20,6 +20,7 @@ main{
   left: 5%;
 
   width: 90%;
+  color: var(--purple-950);
 }
 header{
   display: grid;
@@ -37,8 +38,15 @@ header{
 .allFAQContainer{
   display: flex;
   flex-direction: column;
+}
+.faqContainer{
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1.25rem;
 
   gap: 1.25rem;
+  cursor: pointer;
 }
 .questionContainer{
   display: grid;
@@ -49,8 +57,15 @@ header{
 }
 .questionText{
   font-weight: 600;
+  transition: filter 0.15s;
 }
-.faqInteractionIcon{
+.faqInteractionIconContainer{
   width: 30px;
   height: 30px;
+}
+
+.answerText{
+  color: var(--purple-600);
+  font-size: 0.91rem;
+  line-height: 1.25rem;
 }
