@@ -21,6 +21,9 @@ faqContainer.forEach(selectedContainer => {
     if(currentAnswer.classList.contains("show")){
       currentAnswer.classList.remove("show");
 
+      // Add the "inert" attribute to the current answerContainer
+      currentAnswer.setAttribute("inert", true);
+
       // Change the innerHTML of the container to include the plus icon SVG text
       currentFAQIconContainer.innerHTML = 
       `
@@ -31,6 +34,9 @@ faqContainer.forEach(selectedContainer => {
     }
     else{
       currentAnswer.classList.add("show");
+
+      // Remove the "inert" attribute off the current answerContainer
+      currentAnswer.removeAttribute("inert");
 
       // Change the innerHTML of the container to include the minus icon SVG text
       currentFAQIconContainer.innerHTML = 
