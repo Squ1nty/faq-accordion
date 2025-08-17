@@ -6,7 +6,6 @@
 .answerContainer.show{
   max-height: 1000px;
   overflow: none;
-  padding-bottom: 1.25rem;
 }
 .faqContainer:hover .questionText{
   filter: brightness(450%)

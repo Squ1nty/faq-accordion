@@ -15,5 +15,9 @@ hr{
   color: var(--purple-100);
   opacity: 10%;
 }
+svg{
+  width: 100%;
+  height: auto;
+}
 
 
